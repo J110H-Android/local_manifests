@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-	<remote name="J110H-Android" fetch="https://github.com/J110H-Android/" />
+  <remote name="J110H-Android" fetch="https://github.com/J110H-Android/" />
   <remote name="LineageOS" fetch="https://github.com/LineageOS/" />
-	<project path="device/samsung/j1pop3g" remote="J110H-Android" name="android_device_samsung_j1pop3g" revision="cm-13.0" />
+  <project path="device/samsung/j1pop3g" remote="J110H-Android" name="android_device_samsung_j1pop3g" revision="cm-13.0" />
   <project path="kernel/samsung/j1pop3g" remote="J110H-Android" name="android_kernel_samsung_j1pop3g" revision="cm-13.0" />
   <project path="vendor/samsung/j1pop3g" remote="J110H-Android" name="android_vendor_samsung_j1pop3g" revision="cm-13.0" />
   <project path="vendor/sprd" remote="J110H-Android" name="android_vendor_sprd" revision="cm-13.0" />
