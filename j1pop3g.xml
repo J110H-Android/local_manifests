@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="J110H-Android" fetch="https://github.com/J110H-Android/" />
-  <remote name="LineageOS" fetch="https://github.com/LineageOS/" />
-  <project path="device/samsung/j1pop3g" remote="J110H-Android" name="android_device_samsung_j1pop3g" revision="cm-13.0" />
-  <project path="kernel/samsung/j1pop3g" remote="J110H-Android" name="android_kernel_samsung_j1pop3g" revision="cm-13.0" />
-  <project path="vendor/samsung/j1pop3g" remote="J110H-Android" name="android_vendor_samsung_j1pop3g" revision="cm-13.0" />
-  <project path="vendor/sprd" remote="J110H-Android" name="android_vendor_sprd" revision="cm-13.0" />
-  <project path="hardware/samsung" remote="LineageOS" name="android_hardware_samsung" revision="cm-13.0" />
+    <remote name="J110H-Android" fetch="https://github.com/J110H-Android/" />
+    <remote name="LineageOS" fetch="https://github.com/LineageOS/" />
+    <project path="device/samsung/j1pop3g" remote="J110H-Android" name="android_device_samsung_j1pop3g" revision="cm-13.0" />
+    <project path="kernel/samsung/j1pop3g" remote="J110H-Android" name="android_kernel_samsung_j1pop3g" revision="cm-13.0" />
+    <project path="vendor/samsung/j1pop3g" remote="J110H-Android" name="android_vendor_samsung_j1pop3g" revision="cm-13.0" />
+    <project path="vendor/sprd" remote="J110H-Android" name="android_vendor_sprd" revision="cm-13.0" />
+    <project path="hardware/samsung" remote="LineageOS" name="android_hardware_samsung" revision="cm-13.0" />
+
+<!-- twrp extras -->
+    <remote name="TeamWin"
+            fetch="https://github.com/TeamWin"
+            review="https://gerrit.twrp.me" />
+
+    <remote name="omnirom"
+            fetch="https://github.com/omnirom"
+            review="https://gerrit.omnirom.org" />
+
+<!-- TWRP lives in TeamWin repo -->
+    <project path="bootable/recovery-twrp" name="android_bootable_recovery" remote="TeamWin" revision="android-9.0" />
+
+<!-- TWRP busybox lives in omnirom repo -->
+    <project name="android_external_busybox" path="external/busybox" remote="omnirom" revision="android-6.0" />
+
+<!-- Include Magisk repo for resetprop support -->
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-6.0" />
+
+<!-- Include forked external unzip repo from CyanogenMod for toolbox/toybox support -->
+    <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-13.0" />
+
+<!-- Include external zip repo for zip support -->
+    <project path="external/zip" name="android_external_zip" remote="TeamWin" revision="android-6.0" />
+
+<!-- Include external repos for bash & nano -->
+    <project name="LineageOS/android_external_bash" path="external/bash" />
+    <project name="LineageOS/android_external_nano" path="external/nano" />
+    <project name="LineageOS/android_external_libncurses" path="external/libncurses" />
+<!-- end twrp extras -->
 </manifest>
