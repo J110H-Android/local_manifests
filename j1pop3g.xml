@@ -25,13 +25,5 @@
 
 <!-- Include Magisk repo for resetprop support -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-6.0" />
-
-<!-- Include forked external unzip repo from CyanogenMod for toolbox/toybox support -->
-    <remove-project name="LineageOS/android_external_unzip" />
-    <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-13.0" />
-
-<!-- Include external zip repo for zip support -->
-    <remove-project name="LineageOS/android_external_zip" />
-    <project path="external/zip" name="android_external_zip" remote="TeamWin" revision="android-6.0" />
 <!-- end twrp extras -->
 </manifest>
