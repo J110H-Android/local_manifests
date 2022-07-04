@@ -27,14 +27,11 @@
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TeamWin" revision="android-6.0" />
 
 <!-- Include forked external unzip repo from CyanogenMod for toolbox/toybox support -->
+    <remove-project name="LineageOS/android_external_unzip" />
     <project path="external/unzip" name="android_external_unzip" remote="TeamWin" revision="cm-13.0" />
 
 <!-- Include external zip repo for zip support -->
+    <remove-project name="LineageOS/android_external_zip" />
     <project path="external/zip" name="android_external_zip" remote="TeamWin" revision="android-6.0" />
-
-<!-- Include external repos for bash & nano -->
-    <project name="LineageOS/android_external_bash" path="external/bash" />
-    <project name="LineageOS/android_external_nano" path="external/nano" />
-    <project name="LineageOS/android_external_libncurses" path="external/libncurses" />
 <!-- end twrp extras -->
 </manifest>
